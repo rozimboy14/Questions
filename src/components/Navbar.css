@@ -1,0 +1,62 @@
+.header {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+.header-row {
+  display: flex;
+  justify-content: space-between;
+}
+.dark-btn {
+  display: flex;
+  gap: 16px;
+  cursor: pointer;
+  align-items: center;
+}
+.dark-btn input {
+  display: none;
+}
+.dark-btn::before,
+.dark-btn::after {
+  display: inline-block;
+  content: "";
+  height: 24px;
+  width: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.dark-btn::before {
+  background-image: var(--moon-icon);
+}
+.dark-btn::after {
+  background-image: var(--sun-icon);
+}
+
+header input {
+  display: none;
+}
+
+.dark-btn > span {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border-radius: 999px;
+  background-color: var(--purple-color);
+}
+
+.dark-btn > span span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.dark-btn > span span:last-child {
+  visibility: hidden;
+}
+.dark-btn > span span:first-child {
+  transition: transform 0.3s ease;
+}
+
+header input:checked + span span:first-child {
+  transform: translateX(100%);
+}

@@ -1,0 +1,47 @@
+:root {
+  --purple-color: #a729f5;
+  --dark-navy-color: #313e51;
+  --navy-color: #3b4d66;
+  --gray-navy-color: #626c7f;
+  --light-bluish-color: #abc1e1;
+  --light-grey-color: #f4f6fa;
+  --prue-white-color: #ffffff;
+  --green-color: #26d782;
+  --red-color: #ee5454;
+  --main-font-family: "Rubik", Arial, Helvetica, sans-serif;
+
+  --body-bg-image: url("../assets/pattern-background-desktop-light.svg");
+  --body-bg-image-tablet: url("../assets/pattern-background-tablet-light.svg");
+  --body-bg-image-mobile: url("../assets/pattern-background-mobile-light.svg");
+
+  --sun-icon: url("../assets/icon-moon-dark.svg");
+  --moon-icon: url("../assets/icon-sun-dark.svg");
+}
+
+
+
+.App {
+  width: 100%;
+  height: 100%;
+}
+.container{
+  max-width: 1340px;
+  width: 100%;
+  margin: 0 auto;
+}
+.dark-mode {
+  --light-grey-color: #313e51;
+  --dark-naviy-color: #ffffff;
+  --gray-navy-color: #abc1e1;
+  --dark-navy-color: #ffffff;
+  --prue-white-color: #3b4d66;
+  --body-bg-image: url("./assets/pattern-background-desktop-dark.svg");
+  --body-bg-image: url("../assets/pattern-background-desktop-dark.svg");
+  --body-bg-image-tablet: url("../assets/pattern-background-tablet-dark.svg");
+  --body-bg-image-mobile: url("../assets/pattern-background-mobile-dark.svg");
+  --sun-icon: url("../assets/icon-moon-light.svg");
+  --moon-icon: url("../assets/icon-sun-light.svg");
+}
+body.dark-mode .btn {
+  color: var(--dark-naviy-color);
+}
